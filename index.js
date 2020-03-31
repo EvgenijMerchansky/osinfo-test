@@ -5,15 +5,15 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 app.get('/', async function (req, res) {
-  let username = '';
+  // let username = '';
 
   // const users = await si.users();
   // const host = await si.osInfo();
   // username = `${host.hostname}/${users[0].user}`;
 
-  res.send(`Hello, ${username}`);
+  res.send(JSON.stringify(`Hello`));
 });
 
-app.listen(3000, function () {
+app.listen(port, function () {
   console.log('Example app listening on port 3000!');
 });
