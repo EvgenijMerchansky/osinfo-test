@@ -9,7 +9,7 @@ app.get('/', async function (req, res) {
 
   const users = await si.users();
   const host = await si.osInfo();
-  username = `${host.hostname}/`; // ${users[0].user}`;
+  username = `${host.hostname}/${users}`; // ${users[0].user}`;
 
   res.send(`Hello ${username}`);
 });
