@@ -5,13 +5,13 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 app.get('/', async function (req, res) {
-  // let username = '';
+  let username = '';
 
   // const users = await si.users();
   // const host = await si.osInfo();
   // username = `${host.hostname}/${users[0].user}`;
 
-  res.send(JSON.stringify(`Hello`));
+  res.send(`Hello ${username}`);
 });
 
 app.listen(port, function () {
