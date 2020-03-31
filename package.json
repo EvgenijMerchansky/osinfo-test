@@ -3,10 +3,7 @@
   "version": "1.0.0",
   "description": "system-checker",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "test"
-  },
+  "start": "node index.js",
   "author": "eugene merchansky",
   "license": "ISC",
   "dependencies": {
